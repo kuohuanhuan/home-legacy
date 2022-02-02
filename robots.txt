@@ -1,0 +1,76 @@
+# robots.txt for nekohuan.cyou
+# Copyright (c) 2021 KuoHuanHuan, all rights reserved.
+
+# Good spiders below!
+#
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: BingPreview
+User-agent: DuckDuckBot
+User-agent: Yandex
+User-agent: Applebot
+Disallow: /404*
+
+# Social Medias' spiders below!
+#
+User-Agent: FacebookBot
+User-agent: Twitterbot
+Allow: /
+
+# Bad spiders below!
+#
+User-agent: PetalBot
+User-agent: archive.org_bot
+User-agent: Bytespider
+User-agent: ToutiaoSpider
+Disallow: /
+
+# Spiders that will frequently crawl websites......
+#
+User-agent: wget
+User-agent: fast
+crawl-delay: 120
+
+# Some USELESS Google services
+#
+User-agent: Googlebot-Video
+User-agent: Googlebot-News
+User-agent: Storebot-Google
+User-agent: DuplexWeb-Google
+User-agent: Google Favicon
+User-agent: AdsBot-Google
+User-agent: AdsBot-Google-Mobile
+User-agent: Mediapartners-Google
+Disallow: /
+
+# Block image search
+#
+User-agent: Googlebot-Image
+Disallow: /*.ico$
+Disallow: /*.webp$
+
+# Not in used but may got faked
+#
+User-agent: Yahoo! Slurp bot
+User-agent: MSNbot
+User-agent: google-speakr
+User-agent: ia_archiver
+User-agent: msnbot-media
+User-agent: Google Plus Share
+User-agent: Google Feedfetcher
+Disallow: /
+
+# Others
+#
+User-agent: *
+Disallow: /req/
+Disallow: /404*
+Disallow: /CNAME
+Disallow: /README.md
+
+# Sitemap!
+#
+Sitemap: https://nekohuan.cyou/req/sitemap/sitemap.xml
+
+#
+# End robots.txt file

@@ -1,0 +1,115 @@
+﻿@charset "utf-8";
+/*
+    作者：郭桓桓 | nekohuan.cyou | (c) 2022
+*/
+/* Pre-Sets */
+* {
+    font-family: "Overpass Mono", monospace, sans-serif !important;
+}
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+html, body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: none;
+}
+/* Style-Sets */
+body {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -2;
+    background-image: url(../img/bg/inuse.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+header > div {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+main {
+    position: absolute;
+    bottom: 8%;
+    left: 4%;
+    line-height: 1.5;
+    margin: auto;
+}
+main > img {
+    display: block;
+    overflow: hidden;
+    width: 125px;
+    height: 125px;
+    border: 0.5ex solid white;
+    border-radius: 100px;
+}
+main > img:hover {
+    animation: rotate 1s linear infinite;
+}
+main > h1 {
+    font-size: 1.8em;
+}
+main > p {
+    font-size: 1.2em;
+}
+main > hr {
+    border: 1.5px solid black;
+}
+main > p::after {
+    content: "_";
+    color: black;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: mouseBlink 0.5s step-end infinite;
+}
+div#APlayer {
+    display: block;
+    position: fixed;
+    z-index: 999;
+}
+footer {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    background-color: black;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+footer > small {
+    line-height: 3.5ex !important;
+    font-size: small;
+    color: white;
+}
+@media screen and (max-width: 640px) {
+    div#APlayer {
+        display: none !important;
+    }
+    strong {
+        display: none !important;
+    }
+}
+@keyframes mouseBlink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

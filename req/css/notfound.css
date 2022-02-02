@@ -1,0 +1,83 @@
+@charset "utf-8";
+/*
+    作者：郭桓桓 | nekohuan.cyou | (c) 2022
+*/
+/* Pre-Sets */
+* {
+    font-family: "Noto Sans TC", sans-serif;
+}
+body {
+    margin: 0 !important;
+    cursor: auto;
+}
+/* Style-Sets */
+body {
+    width: 100%;
+    height: 100vh;
+}
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(0deg, #2f66ff, #9940ff 30%, #ee37ff 60%, #ff004c 100%);
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+.circle::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(0deg, #2f66ff, #9940ff 30%, #ee37ff 60%, #ff004c 100%);
+    border-radius: 50%;
+    filter: blur(35px);
+}
+.circle::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: black;
+    border-radius: 50%;
+}
+h1 {
+    position: absolute;
+    color: white;
+    font-weight: 700;
+}
+.title {
+    color: white;
+    position: absolute;
+    top: 10%;
+    text-shadow: 0 0 30px white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.text {
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    text-shadow: 0 0 30px white;
+    font-weight: 700;
+    text-align: center;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
