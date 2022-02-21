@@ -1,13 +1,10 @@
+"use strict";
 /*
 	作者：郭桓桓 | nekohuan.cyou | (c) 2022
 */
 
-
-/* 對自己嚴格點（ */
-"use strict";
-
 /* DOM 載入完畢 */
-$(document).ready(function() {
+$(document).ready(() => {
     // 打字特效
     var i = 0;
     const txtelmnt = $("main > p");
