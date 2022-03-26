@@ -6,7 +6,7 @@
 /* DOM 載入完畢 */
 $(document).ready(() => {
     // 打字特效
-    var i = 0;
+    let i = 0;
     const txtelmnt = $("main > p");
     const cntnt = txtelmnt.text();
     txtelmnt.empty();
