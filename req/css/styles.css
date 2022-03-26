@@ -32,11 +32,6 @@ body {
     background-position: center;
     background-size: cover;
 }
-header > div {
-    position: absolute;
-    right: 1%;
-    top: 1%;
-}
 main {
     position: absolute;
     bottom: 8%;
