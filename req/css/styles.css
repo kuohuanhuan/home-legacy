@@ -66,11 +66,6 @@ main > p::after {
     margin: 0 auto;
     animation: mouseBlink 0.5s step-end infinite;
 }
-div#APlayer {
-    display: block;
-    position: fixed;
-    z-index: 999;
-}
 footer {
     position: absolute;
     bottom: 2%;
