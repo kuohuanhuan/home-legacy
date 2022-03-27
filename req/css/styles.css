@@ -80,9 +80,6 @@ footer > small {
     color: white;
 }
 @media screen and (max-width: 640px) {
-    div#APlayer {
-        display: none !important;
-    }
     strong {
         display: none !important;
     }
