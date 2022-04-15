@@ -7,7 +7,6 @@ User-agent: Googlebot
 User-agent: Bingbot
 User-agent: BingPreview
 User-agent: DuckDuckBot
-User-agent: Yandex
 User-agent: Applebot
 Disallow: /404*
 
@@ -23,6 +22,7 @@ User-agent: PetalBot
 User-agent: archive.org_bot
 User-agent: Bytespider
 User-agent: ToutiaoSpider
+User-agent: Yandex
 Disallow: /
 
 # Spiders that will frequently crawl websites......
