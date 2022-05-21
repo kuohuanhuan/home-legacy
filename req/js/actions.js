@@ -7,7 +7,6 @@
 $(document).ready(() => {
     // jQuery 正規化
     const $ = jQuery.noConflict();
-    typeWriter();
     // 分頁失焦
     const originalTitle = document.title;
     $(function() {
@@ -35,7 +34,8 @@ $(document).ready(() => {
         if (i < introContent.length) {
             intro.append(introContent.charAt(i));
             i++;
-	    setTimeout(typeWriter, 100);
+            setTimeout(typeWriter, 100);
         };
     };
+    typeWriter();
 });
