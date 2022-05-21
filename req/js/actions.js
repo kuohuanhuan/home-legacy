@@ -16,7 +16,7 @@ $(document).ready(() => {
         $(window).blur(function() {
             document.title = "人怎麼不見了╭(°A°`)╮";
         });
-    };
+    });
     // 頁腳年份
     if (new Date().getYear() !== 121) {
         $("#footerYear").html("-" + new Date().getFullYear().toString() + "&nbsp;");
